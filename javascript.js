@@ -9,8 +9,21 @@ function getComputerChoice(){
     else if (num == 2){
         return "Paper";
     } else { 
-        return "Scissors"
+        return "Scissors";
     }
 
-
 }
+
+function getPlayerChoice(){
+    let choice = prompt("Input either Rock, Paper or Scissors").toLowerCase();
+    return choice;
+}
+
+
+
+
+
+
+
+const playerSelection = getPlayerChoice();
+const computerChoice = getComputerChoice();
