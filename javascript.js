@@ -1,5 +1,8 @@
 
 
+let playerScore = 0;
+let computerScore = 0;
+
 for (let i = 0; i < 5; i++) {
 
     function getComputerChoice(){
@@ -31,21 +34,27 @@ for (let i = 0; i < 5; i++) {
             return "Tie!";
         }
         else if (playerSelection == "rock" && computerChoice == "paper"){
+            computerScore++
             return "Computer wins!";
         }
         else if (playerSelection == "rock" && computerChoice == "scissors"){
+            playerScore++
             return "Player wins!";
         }
         else if (playerSelection == "paper" && computerChoice == "rock"){
+            playerScore++
             return "Player wins!";
         }
         else if (playerSelection == "paper" && computerChoice == "scissors"){
+            computerScore++
             return "Computer wins!";
         }
         else if (playerSelection == "scissors" && computerChoice == "rock"){
+            computerScore++
             return "Computer wins!";
         }
         else if (playerSelection == "scissors" && computerChoice == "paper"){
+            playerScore++
             return "Player wins!";
         }
     }
@@ -54,6 +63,7 @@ for (let i = 0; i < 5; i++) {
     const playerSelection = getPlayerChoice();
     const computerChoice = getComputerChoice();
 
-    console.log(computerChoice);
     console.log(playRound(playerSelection, computerChoice));
+
+    console.log(`Score is Computer: ${computerScore} and Player: ${playerScore}`)
 }
