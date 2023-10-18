@@ -1,0 +1,28 @@
+body{
+    height: 500px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    height: 300px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 30px;
+}
+
+.score{
+    padding-right: 23px;
+}
